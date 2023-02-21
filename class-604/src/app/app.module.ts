@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { ExerciseComponent } from './components/exercise/exercise.component';
 import { ShoppingListComponent } from './components/shopping-list/shopping-list.component';
+import { BoxColorComponent } from './box-color/box-color.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ShoppingListComponent } from './components/shopping-list/shopping-list.
     AppComponent,
     MainPageComponent,
     ExerciseComponent,
-    ShoppingListComponent
+    ShoppingListComponent,
+    BoxColorComponent
   ],
   imports: [
     BrowserModule,

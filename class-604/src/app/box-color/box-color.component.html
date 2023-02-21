@@ -1,0 +1,23 @@
+<p>box-color works!</p>
+
+
+
+<div class="container">
+    <div [ngStyle]="{'background-color': color1, 'color': textColor1}" (mouseover)="toggleColors(1)" (mouseleave)="resetColors(1)">
+      <h3>Box 1</h3>
+      <p>This is the text inside box 1.</p>
+    </div>
+    <div [ngStyle]="{'background-color': color2, 'color': textColor2}" (mouseover)="toggleColors(2)" (mouseleave)="resetColors(2)">
+      <h3>Box 2</h3>
+      <p>This is the text inside box 2.</p>
+    </div>
+    <div [ngStyle]="{'background-color': color3, 'color': textColor3}" (mouseover)="toggleColors(3)" (mouseleave)="resetColors(3)">
+      <h3>Box 3</h3>
+      <p>This is the text inside box 3.</p>
+    </div>
+  </div>
+  
+  <button class="button" (click)="toggleMode()">
+    {{ isColorblind ? 'Modo daltonico activado' : 'Modo daltonico' }}
+  </button>
+  
